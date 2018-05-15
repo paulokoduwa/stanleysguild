@@ -1,0 +1,85 @@
+SMEDESIGNPRO website design questioner
+
+Business name *
+
+Schools Guide
+
+
+What does your business actually do? *
+
+Schools Guide is an online platform that offer parents easy assess to search for good schools on our website for their kids.
+What do you want your site to accomplish? *
+
+"What's your primary goal for the site? 
+
+Our aim is to have a user friendly website where parents can easily visit at the comfort of their homes and offices and search for any school and location of their choice and have a visual tour of what each school has to aid the parents decision to get that ideal school for their kids.
+
+Do you have a website already? *
+Yes
+
+What makes your company remarkable? *
+
+* Our user-firendly website
+* Our various packages for schools
+* Our unbiased ratings of schools
+* Our customer services for both schools and parents
+
+Who are your competitors? *
+
+goodschoolsguidenigeria.com
+schoolscompass.com.ng
+
+What websites do you like and why? *
+
+www.schoolscompass.com.ng The reason is that the website is top notch and is user friendly. But I want mine to be far better
+
+Who exactly are your customers and what are their pains? *
+
+1. Schools: high cost of tv adverts, high competition due to the proliferation of schools
+2. Parents: inability to assess good schools for their kids. Lack of proper information from schools to aid their decisions to make a better choice of schools for their kids. High cost of fees and low performance from students in return.  
+
+What features do you want your website to have? *
+
+
+Social media implementation?
+Email collection and email marketing capability?
+A blog or news feed?
+Photo galleries?
+A slider banner?
+A mobile site?
+A responsive site?
+A blog or news page?
+The ability for people to leave comments?
+A quick contact form, quote request or booking form
+Customer service icon
+
+How will you record your results? *
+
+
+The amount of new enquiries you get.
+Number of users of the site’s forum.
+Number of sales.
+Customer’s average order size.
+Amount of traffic.
+Level of activity on the site’s blog.
+Number of social media (Facebook / Twitter) followers.
+
+
+Do you select a style guide or any existing collateral? 
+
+do you already have online and offline materials created for your business. do select any you already have ?
+
+NO
+
+Do you need a content management system?
+Yes
+
+Pls select your preference for which CMS to use?
+WordPress
+Joomla
+
+Do you have a Google Analytics account?
+Yes
+
+Will you have any subscription services (packages)?
+Yes
