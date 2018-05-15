@@ -504,7 +504,7 @@
                 </a>
                 <div class=" h-brand">
                    <span class="brand"> ProSchoolGuide</span>
-                    <img src="images/Schoolsguidelogo.png">
+                    <img src="#">
                 </div>
                 <div class="h-links">
                     <ul>
