@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title>profile school registration</title>
+  <style>
+    #nav_id {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div id="nav_id" class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2>Dynamic Tabs</h2>
+        <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a
+          unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+        <ul class="nav nav-tabs horizontal">
+          <li class="active">
+            <a data-toggle="tab" href="#home">Sign Up</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#menu1">About your school</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#menu2">Attraction</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#menu3">Choose a package</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <form action="" id="form1">
+
+              <div class="form-group">
+                <label for="sel1">Select Your Title:</label>
+                <select class="form-control" id="sel1">
+                  <option>Mr.</option>
+                  <option>Mrs</option>
+                  <option>Dr.</option>
+                  <option>Ms.</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="F_name">Fisrt Name:</label>
+                <input type="text" class="form-control" id="F_name">
+              </div>
+
+              <div class="form-group">
+                <label for="F_name">Last Name:</label>
+                <input type="text" class="form-control" id="L_name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address (school Co-ordinator)</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" class="form-control" id="c_password">
+              </div>
+              <div class="form-group">
+                <label for="tel">Tel:</label>
+                <input type="tel" class="form-control" id="tel">
+              </div>
+              <div id="">
+                <a href="#" role="button">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                </a>
+              </div>
+            </form>
+
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <form>
+              <div class="form-group">
+                <label for="school_name">School Name</label>
+                <input type="text" class="form-control" id="school_name">
+              </div>
+              <div class="form-group">
+                <label for="school_fee"> Choose your School fee range per term</label>
+
+                <select class="form-control">
+                  <option value="free for pre-intake">Free for pre-intake</option>
+                  <option value="N 25,000 and below">₦ 0 - ₦25,000</option>
+                  <option value="N 26,000 - 100,000">₦ 26,000 - ₦ 100,000</option>
+                  <option value="N 101,000 - 200,000">₦ 101,000 - ₦ 200,000</option>
+                  <option value="N 201,000 - 300,000">₦ 201,000 - ₦ 300,000</option>
+                  <option value="N 301,000 - 500,000">₦ 301,000 - ₦ 500,000</option>
+                  <option value="N 501,000 - 750,000">₦ 501,000 - ₦ 750,000</option>
+                  <option value="N 751,000 - N 1,000,000">₦ 751,000 - ₦ 1,000,000</option>
+                  <option value="N 1,000,000 And Above">₦ 1,000,000 And Above</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="school_motto">School motto:</label>
+                <input type="text" class="form-control" id="school_motto" placeholder="Faith and Honour">
+              </div>
+              <div class="form-group">
+                <label for="educational_level">Select your school level(s) </label>
+                <br>
+                <input class="form-check-inline" type="checkbox" name="school_leve" value="primaryschool"> Creche, Daycare, Nusery, and Primary
+                <br>
+                <input class="form-check-inline" type="checkbox" name="school_level" value="sec_school"> secondary school and Advance class
+                <br> Others
+                <input type="text" class="form-inline" name="school_level" id="others">
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="school_type">School type:</label>
+                <select class="form-control">
+                  <option>Day</option>
+                  <option>Boarding</option>
+                  <option>Boarding and Day</option>
+                  <option>Part-time</option>
+                  <option>Home Study</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Whats makes your school unigue </p>
+                <textarea rows="5" class="form-control" id="school_details" placeholder="Our school put the child first in anything we do"></textarea>
+              </div>
+              <h4>School Contact Details</h4>
+
+              <div class="form-group">
+                <label for="state">State:</label>
+                <select name="state" id="states" class="combo" required="required">
+                  <option value="">(Select State)</option>
+                  <option value="Edo">Edo</option>
+                  <option value="Abia">Abia</option>
+                  <option value="Adamawa">Adamawa</option>
+                  <option value="Akwa_Ibom">Akwa Ibom</option>
+                  <option value="Anambra">Anambra</option>
+                  <option value="Bauchi">Bauchi</option>
+                  <option value="Bayelsa">Bayelsa</option>
+                  <option value="Benue">Benue</option>
+                  <option value="Borno">Borno</option>
+                  <option value="Cross_River">Cross River</option>
+                  <option value="Delta">Delta</option>
+                  <option value="Ebonyi">Ebonyi</option>
+                  <option value="Ekiti">Ekiti</option>
+                  <option value="Enugu">Enugu</option>
+                  <option value="FCT">FCT</option>
+                  <option value="Gombe">Gombe</option>
+                  <option value="Imo">Imo</option>
+                  <option value="Jigawa">Jigawa</option>
+                  <option value="Kaduna">Kaduna</option>
+                  <option value="Kano">Kano</option>
+                  <option value="Katsina">Katsina</option>
+                  <option value="Kebbi">Kebbi</option>
+                  <option value="Kogi">Kogi</option>
+                  <option value="Kwara">Kwara</option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Nassarawa">Nassarawa</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Ogun">Ogun</option>
+                  <option value="Ondo">Ondo</option>
+                  <option value="Osun">Osun</option>
+                  <option value="Oyo">Oyo</option>
+                  <option value="Plateau">Plateau</option>
+                  <option value="Rivers">Rivers</option>
+                  <option value="Sokoto">Sokoto</option>
+                  <option value="Taraba">Taraba</option>
+                  <option value="Yobe">Yobe</option>
+                  <option value="Zamfara">Zamfara</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="school_city">City</label>
+                <input type="text" class="form-control" maxlength="50" placeholder="enter your school City" required>
+              </div>
+              <div class="form-group">
+                <label for="school_Area">Area</label>
+                <input type="text" class="form-control" maxlength="50" placeholder="enter your school Area">
+              </div>
+              <div class="form-group">
+                <label for="school_landmark">
+                  Landmark:
+                </label>
+                <input class="form-control" type="text" placeholder="enter a Landmark" maxlength="200">
+              </div>
+
+              <div class="form-group">
+                <label for="school_address">
+                  School Adress:
+                </label>
+                <input type="text" class="form-control" maxlength="300" placeholder="enter your school address" required>
+              </div>
+              <div class="form-group">
+                <label for="school_email">School email address</label>
+                <input type="email" class="form-control" maxlength="50" placeholder="enter school email address" required>
+              </div>
+              <div class="form-group">
+                <label for="school_phone">School telephone </label>
+                <input type="email" class="form-control" maxlength="50" placeholder="234XXXXXXXXXX" required>
+              </div>
+            </form>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="button-group">
+                  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-blackboard"> AVAILABLE SCHOOL FACILITIES
+                    </span>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="small" data-value="option1" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Standard Multipurpose hall</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option2" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Standard ICT Centre</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option3" tabIndex="-1">
+                        <input type="checkbox" />&nbsp;Sport Complex and Playground</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option4" tabIndex="-1">
+                        <input type="checkbox" />&nbsp;Standard Library</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option5" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Swimming Pool</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; </a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Zoological/Botanical Garden</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Interactive Whiteboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; </a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Sick Bay</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp;Interactive Whiteboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp;Children with Special Needs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Lunch Programme
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Music Room</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Spacious Classrooms</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Teacher : Pupils in Ratio 1:10</a>
+                    </li>
+                    <li>
+                      <a href="#" class="small" data-value="option6" tabIndex="-1">
+                        <input type="checkbox" />&nbsp; Positive Education Ethics</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+            
+              <div class="col-sm-6">
+                  <div class="button-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                      <span class="glyphicon glyphicon-blackboard"> AVAILABLE SCHOOL FACILITIES
+                      </span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#" class="small" data-value="option1" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Standard Multipurpose hall</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option2" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Standard ICT Centre</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option3" tabIndex="-1">
+                          <input type="checkbox" />&nbsp;Sport Complex and Playground</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option4" tabIndex="-1">
+                          <input type="checkbox" />&nbsp;Standard Library</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option5" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Swimming Pool</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; School Bus Services</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Zoological/Botanical Garden</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Sick Bay</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp;Interactive Whiteboard</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp;Children with Special Needs</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Lunch Programme
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Music Room</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Spacious Classrooms</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Teacher : Pupils in Ratio 1:10</a>
+                      </li>
+                      <li>
+                        <a href="#" class="small" data-value="option6" tabIndex="-1">
+                          <input type="checkbox" />&nbsp; Positive Education Ethics</a>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+            </div>
+          </div>
+
+
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

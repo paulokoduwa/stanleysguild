@@ -81,17 +81,25 @@
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
       <br><br>
-      
-      <p><span class="badge">2</span> Comments:</p><br>
-      
+   
      </div>
      </div>
-     </div>
-     
+  </div>
+     <?php include("../footer.php"); ?>
+    
+     <script>
+             /* Set the width of the side navigation to 250px */
+             function openNav() {
+                 document.getElementById("mySidenav").style.width = "250px";
+             }
+ 
+             /* Set the width of the side navigation to 0 */
+             function closeNav() {
+                 document.getElementById("mySidenav").style.width = "0";
+             }
+          </script>
+ 
 
-
-<?php include("footer.php"); ?>
-         </div>
 
 
 

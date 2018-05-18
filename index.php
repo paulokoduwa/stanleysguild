@@ -138,11 +138,7 @@
                 
             }
             .search-form{
-                background-color: #00000047;
-                padding: 20px;
-                position: relative;
-                top:0;
-                bottom: 0;
+               
             }
             .search-form h3{
             color: #fff;
@@ -209,45 +205,9 @@
                 white-space: nowrap;
                 padding: 20px 0;
             }
-            .item {
-                margin: 10px;
-                margin-top: 50px;
-                display: inline-block;
-                width: 200px;
-                font:20px;
-                /* box-shadow: -1px 1px 9px 0px black; */
-              
-            }
-            .item .card--big{
-                background-color: #fff;
-                
-                text-wrap: wrap;
             
-
-            }
-            .item .card--big .card__image{
-                position: relative;
+               
                 
-                height: 150px;
-              
-            }
-            .item .card--big .card__title{
-                margin: 0;
-               /* text-shadow: 0px 0px 3px black; */
-               /* top: -11px; */
-                white-space: pre-wrap;
-                position: relative;
-                /* background: #0000001c; */
-                color: #4040a1;
-                padding: 0 5px;.
-               /*  box-shadow: 0 0 60px -4px black;*/
-               
-             }
-            .item .card--big .card__image img{
-           
-                width: 100%;
-               
-                }
             
                 .h1, h2 {
                     font-size:20px;
@@ -255,25 +215,6 @@
                     margin-bottom:5px  
                 }
                 */
-            .item .card--big {
-            }
-            .card__button {
-                outline: none;
-                position: relative;
-                display: inline-block;
-                border: none;
-                line-height: 33px;
-                background-color: transparent;
-                padding: 0 16px;
-                color: #87b748;
-            }
-            .card__button:hover {
-                box-shadow: 0 0 20px 1px #56b4b7;
-                font font-family: sans-serif;
-                background-color: #fff;
-                color: #ea9a4a;
-                font-weight:bold;
-            }
             section .first, .second, .third{
             padding: 0px 20px;
 
@@ -488,11 +429,18 @@
                     text-align: justify;
                 }
                     }
+
+#lower_home {
+    max-width: 960px;
+    margin: 0 auto;
+}
             </style>
 
     </head>
-    <body>
-    <div id="mySidenav" class="sidenav">
+    <body >
+
+
+    <div id="mySidenav" class="sidenav"  >
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="about">About</a>
             <a href="blog">Blog</a>
@@ -537,11 +485,11 @@
         </header>
       
        
-    <section>
+    <section >
             <article>
-                <div class="first-section">
+                <div  class="first-section">
 
-            <div class="background-image">
+            <div   class="background-image">
 
 
                 <div class="carousel slide" data-ride="carousel" id="carousel-1">
@@ -579,37 +527,19 @@
                    
                 </div> 
             </article>
-            
-            <article id="scroll-schools">
-            <center><span class="best-school-title" 
-                                    style="
-                                    position: absolute;
-                                    right: 0;
-                                    left: 0;
-                                    background: #87b748;
-                                    font-family: sans-serif;
-                                    font-weight: bold;
-                                    font-size: 29px;
-                                    padding-buttom:30px;
-                                    color:#fff
-                                    "
-                                    >
-                                                    Featured schools
-                                                    </span></center>
-                 <?php include("schools.php"); ?>
-            </article>
-        </section>
                 
 
-/*this is where to add a container foe whats in for student*/
+<!--this is where to add a container foe whats in for student-->
+<div id="lower_home">
+
+<?php
+    include("container.php");
+?>
 
 
 
 
-
-
-
-
+<!--
 
         <section>
         <div class="container container-info">
@@ -654,7 +584,7 @@
                     </div>
             </div>
            
-
+-->
          <section>
          <?php include("footer.php"); ?>
          </div>
@@ -671,6 +601,7 @@
                 document.getElementById("mySidenav").style.width = "0";
             }
          </script>
+    </div>
     </body>
 
     
