@@ -17,67 +17,67 @@
     <div class="row">
       <div>
         <h1 style="text-align: center;">this is the featured school</h1>
-        <div class="col-sm-2 col-xs-3">
+        <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
 
         </div>
-        <div class="col-sm-2 col-xs-3">
+        <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
 
         </div>
-        <div class="col-sm-2 col-xs-3">
+        <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
 
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
 
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
 
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
         </div>
-        <div <div class="col-sm-2 col-xs-3">
+        <div <div class="col-sm-2 col-xs-2">
           <a href="#">
             <img src="images/download.jpg" class="img-responsive" alt="#">
           </a>
@@ -88,7 +88,7 @@
       <div>
         <h1 class="example">READ ARTICLES FROM OUR BLOG</h1>
 
-        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-12 shadow">
+        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-2-12 shadow">
           <img src="images/first_cover.jpg" class="img-responsive blog_photo">
           </a>
           <h3 class="blog_title">my blog title is my blog title</h3>
@@ -101,7 +101,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-12 shadow">
+        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-2-12 shadow">
           <img src="images/first_cover.jpg" class="img-responsive blog_photo">
           </a>
           <h3 class="blog_title">my blog title is my blog title</h3>
@@ -114,7 +114,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-12 shadow">
+        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-2-12 shadow">
           <img src="images/first_cover.jpg" class="img-responsive blog_photo">
           </a>
           <h3 class="blog_title">my blog title is my blog title</h3>
@@ -127,7 +127,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-12 shadow">
+        <div class="col-lg-3  col-md-4 col-sm-6 col-xs-2-12 shadow">
           <img src="images/first_cover.jpg" class="img-responsive blog_photo">
           </a>
           <h3 class="blog_title">my blog title is my blog title</h3>
@@ -145,7 +145,7 @@
 
 <div class="row">
 
-  <div class="col-lg-4 col-sm-4 col-xs-4">
+  <div class="col-lg-4 col-sm-4 col-xs-2">
     <h3>What's In For Parents</H3>
     <ul>
         <div>proximity of schools</div>
@@ -164,7 +164,7 @@
       <div>helping schools to standardize their services via seminars and trainings</div>
   </ul>
   </div>
-  <div class="col-lg-4 col-sm-4 col-xs-4">
+  <div class="col-lg-4 col-sm-4 col-xs-2-4">
 
     <h3>Whats in For Students</h3>
     <ul>
