@@ -14,6 +14,7 @@
      <!-- pull in google font -->
     <link href="https://fonts.googleapis.com/css?family=Forum|Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="container.css">
         <title>Schools Guide | Home Page </title>
           <style>
 
@@ -430,7 +431,7 @@
                 }
                     }
 
-#lower_home {
+ #lower_home {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -536,58 +537,9 @@
     include("container.php");
 ?>
 
-
-
-
-<!--
-
-        <section>
-        <div class="container container-info">
-        <h4> Whats in it for Parents, students, and Edu stakeholders </h4>
-            <div class="first p">
-                        <img src="images/parents.jpg" width="100%">
-                        <p>
-                           <h4> Search for the right school by</h4>
-                            <ul>
-                                <li>Location</li>
-                                <li>Budget</li>
-                                <li>School type</li>
-                                <li>Boarding, Day school or both</li>
-                            </ul>
-                       </p>
-                    </div>
-
-                    <div class="second p" >
-                    <img src="images/library.jpg" width="100%">
-                    <h4>More than 20,000 tops schools are register and ranked using</h4>
-                    <p> 
-                            <ul>
-                                
-                                <li>Parent honest reviews</li>
-                                <li>Academic performance</li>
-                                <li>Location</li>
-                            </ul>
-                    </p>
-                    </div>
-
-                    <div class="third p" style="font-family: 'PT Sans', sans-serif;">
-                    <img src="images/reg.png" width="100%">
-                    <p>
-                     <h4>Search for the right school by</h4>
-                            <ul>
-                                <li>Location</li>
-                                <li>Honest reviews</li>
-                                <li>Location</li>
-                                <li>Location</li>
-                            </ul>
-                    </p>
-                    </div>
-            </div>
-           
--->
          <section>
          <?php include("footer.php"); ?>
-         </div>
+      
          <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
          <script>
@@ -601,6 +553,7 @@
                 document.getElementById("mySidenav").style.width = "0";
             }
          </script>
+            </div>
     </div>
     </body>
 
