@@ -533,7 +533,7 @@
 <div id="lower_home">
 
 <?php
-    include("container.php");
+    include("container.html");
 ?>
 
 
