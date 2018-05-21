@@ -83,7 +83,7 @@
               </div>
               <div id="">
                 <a href="#" role="button">
-                  <button type="button" class="btn btn-primary btn-lg btn-block"> Click here to tell Parents about your school</button>
+                  <button type="button" class="btn btn-primary btn-lg btn-block" id="btn_nxt1">Next >></button>
                 </a>
               </div>
             </form>
@@ -117,26 +117,26 @@
               <div class="form-group">
                 <label for="educational_level">Select your school level(s) </label>
                 <br>
-                <input class="form-check-inline" type="checkbox" name="school_leve" value="primaryschool"> Creche, Daycare, Nusery, and Primary
+                <input class="form-check-inline" type="checkbox" name="school_level[]" value="primaryschool"> Creche, Daycare, Nusery, and Primary
                 <br>
-                <input class="form-check-inline" type="checkbox" name="school_level" value="sec_school"> secondary school and Advance class
+                <input class="form-check-inline" type="checkbox" name="school_level[]" value="sec_school"> secondary school and Advance class
                 <br> Others
-                <input type="text" class="form-inline" name="school_level" id="others">
+                <input type="text" class="form-inline" name="school_level_other" id="others">
                 </select>
               </div>
               <div class="form-group">
                 <label for="school_type">School type:</label>
-                <select class="form-control">
-                  <option>Day</option>
-                  <option>Boarding</option>
-                  <option>Boarding and Day</option>
-                  <option>Part-time</option>
-                  <option>Home Study</option>
+                <select class="form-control" name="school_type">
+                  <option value="day">Day</option>
+                  <option value="boarding">Boarding</option>
+                  <option value="boarding_and_day">Boarding and Day</option>
+                  <option value="part_time">Part-time</option>
+                  <option value="home_study">Home Study</option>
                 </select>
               </div>
               <div class="form-group">
-                <p>Whats makes your school unigue </p>
-                <textarea rows="5" class="form-control" id="school_details" placeholder="Our school put the child first in anything we do"></textarea>
+                <p>Whats makes your school unique </p>
+                <textarea rows="5" class="form-control" name="what_mksunique" id="school_details" placeholder="Our school put the child first in anything we do"></textarea>
               </div>
               <h4>School Contact Details</h4>
 
@@ -185,36 +185,36 @@
               </div>
               <div class="form-group">
                 <label for="school_city">City</label>
-                <input type="text" class="form-control" maxlength="50" placeholder="enter your school City" required>
+                <input type="text" class="form-control" name="school_city" maxlength="50" placeholder="enter your school City" required>
               </div>
               <div class="form-group">
                 <label for="school_Area">Area</label>
-                <input type="text" class="form-control" maxlength="50" placeholder="enter your school Area">
+                <input type="text" class="form-control"name="school_area" maxlength="50" placeholder="enter your school Area">
               </div>
               <div class="form-group">
                 <label for="school_landmark">
                   Landmark:
                 </label>
-                <input class="form-control" type="text" placeholder="enter a Landmark" maxlength="200">
+                <input class="form-control" type="text" name="school_landmark" placeholder="enter a Landmark" maxlength="200">
               </div>
 
               <div class="form-group">
                 <label for="school_address">
-                  School Adress:
+                  School Address:
                 </label>
-                <input type="text" class="form-control" maxlength="300" placeholder="enter your school address" required>
+                <input type="text" class="form-control" maxlength="300" name="school_address" placeholder="enter your school address" required>
               </div>
               <div class="form-group">
                 <label for="school_email">School email address</label>
-                <input type="email" class="form-control" maxlength="50" placeholder="enter school email address" required>
+                <input type="email" class="form-control" maxlength="50" name="school_email" placeholder="enter school email address" required>
               </div>
               <div class="form-group">
                 <label for="school_phone">School telephone </label>
-                <input type="email" class="form-control" maxlength="50" placeholder="234XXXXXXXXXX" required>
+                <input type="tel" class="form-control" maxlength="50" placeholder="+234XXXXXXXXXX" required>
               </div>
-            </form>
+            <button class="btn btn-primary">Next >></button>
           </div>
-       
+        
       
       
 <div id="menu2" class="tab-pane fade">
@@ -249,34 +249,34 @@
 
 <div class="form-group">
 <label for="edu_scope">Educational Scope:</label> 
-<div class="input select"><input type="hidden" value="edu_1"</div>
-<div class="checkbox"><label for="edu_1"><input type="checkbox" name="edu_2" id="edu_id_2" > Secondary</label></div>
-<div class="checkbox"><label for="edu_3"><input type="checkbox" name="edu_3" id="edu_id_3" checked="checked">Primary </label></div>
-<div class="checkbox"><label for="edu_4"><input type="checkbox" name="edu_4" id="edu_id_4"> After school leatures</label></div>
-<div class="checkbox"><label for="edu_5"><input type="checkbox" name="edu_5" id="edu_id_5" checked="checked"> Nursery</label></div>
-<div class="checkbox"><label for="edu_6"><input type="checkbox" name="edu_6" id="edu_id_6"> Toddler</label></div>
-<div class="checkbox"><label for=""><input type="checkbox" name="edu_7" id=""> Creche/Daycare</label></div>
+
+<div class="checkbox"><label for="edu_1"><input type="checkbox" name="edu_scope[]" id="edu_id_2" value="secondary"> Secondary</label></div>
+<div class="checkbox"><label for="edu_3"><input type="checkbox" name="edu_scope[]" id="edu_id_3" checked="checked" value="primary">Primary </label></div>
+<div class="checkbox"><label for="edu_4"><input type="checkbox" name="edu_scope[]" id="edu_id_4" value="after_school_lectures"> After school lectures</label></div>
+<div class="checkbox"><label for="edu_5"><input type="checkbox" name="edu_scope[]" id="edu_id_5" checked="checked" value="nursery"> Nursery</label></div>
+<div class="checkbox"><label for="edu_6"><input type="checkbox" name="edu_scope[]" id="edu_id_6" value="toddler"> Toddler</label></div>
+<div class="checkbox"><label for=""><input type="checkbox" name="edu_scope[]" value="creche_daycare" id=""> Creche/Daycare</label></div>
 </div>
 <div class="form-group">
 <label for="website">School Facilities:</label>
 <p class="alert alert-info">
 Do select facilities that your have presently in your school
 </p>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Positive Education Ethics</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Teacher: Pupils in Ratio 1:10</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Spacious Classrooms</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Music Room</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Lunch Programme</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Children with Special Needs</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Interactive Whiteboard</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Sick Bay</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Zoological/Botanical Garden</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>School Bus Services </div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Swimming Pool</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Standard Library</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Sport Complex and Playground</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Standard ICT Centre</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Standard Multipurpose Hall</div>  
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" checked="checked"value="positive education ethics"></label>Positive Education Ethics</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Teacher: Pupils in Ratio 1:10"></label>Teacher: Pupils in Ratio 1:10</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" checked="checked" value="Spacious Classrooms"></label>Spacious Classrooms</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]"id="" value="Music Room"></label>Music Room</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Lunch Programme"></label>Lunch Programme</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Children with Special Needs"></label>Children with Special Needs</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Interactive Whiteboard"></label>Interactive Whiteboard</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Sick Bay"></label>Sick Bay</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Zoological/Botanical Garden"></label>Zoological/Botanical Garden</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="School Bus Services"></label>School Bus Services </div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Swimming Pool"></label>Swimming Pool</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" checked="checked" value="Standard Library"></label>Standard Library</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Sport Complex and Playground"></label>Sport Complex and Playground</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" value="Standard ICT Centre"></label>Standard ICT Centre</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="school_facilities[]" id="" checked="checked" value="Standard Multipurpose Hall"></label>Standard Multipurpose Hall</div>  
 </div>
 
 <div class="form-group">
@@ -284,30 +284,32 @@ Do select facilities that your have presently in your school
 <p class="alert alert-info">
 Tick special activities that children in your school take part in:
 </p>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Music and Drama</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" checked="checked"></label>Music and Drama</div>
 
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Art and Craft</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Chess</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Ballet</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Taekwondo</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Dabate/Press</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Maths</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Foreign Language</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Instruments Training</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Spelling Bee </div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Aerobics</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Etiquette</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Yoruba</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Drawing and Painting</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Young Life Savers (First Aiders)</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Football Club</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Basketball Club</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>ICT Club</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>French</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Hausa</div>
-<div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Igbo</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Art and Craft"></label>Art and Craft</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" checked="checked" value="Chess"></label>Chess</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Ballet"></label>Ballet</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Taekwondo"></label>Taekwondo</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Dabate/Press"></label>Dabate/Press</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id=""value="Maths"></label>Maths</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Foreign Language"></label>Foreign Language</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Instruments Training"></label>Instruments Training</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Spelling Bee"></label>Spelling Bee </div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Aerobics"></label>Aerobics</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Etiquette" checked="checked"></label>Etiquette</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Yoruba"></label>Yoruba</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Drawing and Painting"></label>Drawing and Painting</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value=">Young Life Savers (First Aiders)" checked="checked"></label>Young Life Savers (First Aiders)</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Football Club"></label>Football Club</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Basketball Club"></label>Basketball Club</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="ICT Club"></label>ICT Club</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="French"></label>French</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id="" value="Hausa"></label>Hausa</div>
+<div class="checkbox"><label for=""><input type="checkbox" name="club_activities[]" id=""value="Igbo"></label>Igbo</div>
 </div>
-</form>
+
+
+
 
 
 
@@ -326,26 +328,26 @@ Tick special activities that children in your school take part in:
         <p class="alert alert-info">
         Tick extra activities that applies to your school
         </p>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Inter-House Sports</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" checked="checked" value="Inter-House Sports"></label>Inter-House Sports</div>
         
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Special Music Class</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked">Quiz/Debate/Spelling Bee</label>Chess</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>French or foreign languages</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Colour Day</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Dabate/Press</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Costume Day</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Dance</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Swimming</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Etiquette (Teaching)</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Prize/Award giving day</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Karate, Kung-fu etc</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Voice training</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Local excursions/field trips</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id="" checked="checked"></label>Foreign field trips</div>
-        <div class="checkbox"><label for=""><input type="checkbox" name="" id=""></label>Class Party</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" value="Special Music Class"></label>Special Music Class</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" checked="checked"  value="Quiz/Debate/Spelling Bee">Quiz/Debate/Spelling Bee</label>Chess</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id=""  value="French or foreign languages"></label>French or foreign languages</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id=""  value="Colour Day"></label>Colour Day</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id=""  value="Debate/Press"></label>Debate/Press</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id=""  value="Costume Day"></label>Costume Day</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id=""  value="Dance"></label>Dance</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id=""  value="Swimming"></label>Swimming</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id=""  value="Etiquette (Teaching)"></label>Etiquette (Teaching)</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" value="Prize/Award giving day"></label>Prize/Award giving day</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" value="Karate, Kung-fu etc" checked="checked"></label>Karate, Kung-fu etc</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" value="Voice training"></label>Voice training</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" value="Local excursions/field trips"></label>Local excursions/field trips</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" value="Foreign field trips" checked="checked"></label>Foreign field trips</div>
+        <div class="checkbox"><label for=""><input type="checkbox" name="extra_curricular[]" id="" value="Class Party"></label>Class Party</div>
         </div>
         <div class="form-group">
-            <label for="website">Admision Officer info</label>
+            <label for="website">Admission Officer info</label>
             <p class="alert alert-info">
             Let us know who parents can call
             </p>
@@ -359,18 +361,18 @@ Tick special activities that children in your school take part in:
             </div>
             <div class="form-group">
                 <label for="Admin_name">Email:</label>
-                <input class="form-control" type="email" name="admin_name" id="admin_info3">
+                <input class="form-control" type="email" name="admin_email" id="admin_info3">
               </div>
 
               <div class="form-group">
-                  <label for="website">School Facilities:</label>
+                  <label for="website">School Achievements:</label>
                   <p class="alert alert-info">let Parents know about special awards won by the school
                   </p>
-                  <textarea rows="5" class="form-control" id="school_details" placeholder="In 2007 we were the best in Maths"></textarea>
+                  <textarea rows="5" class="form-control" id="school_details" name="awards" placeholder="In 2007 we were the best in Maths"></textarea>
                 </div>
                 <div id="">
                     <a href="#" role="button">
-                      <button type="button" class="btn btn-primary btn-lg btn-block">click here to choose a plan</button>
+                      <button type="button" class="btn btn-primary btn-lg btn-block" id="btn_pr2"><< Previous</button> <button type="button" class="btn btn-primary btn-lg btn-block" id="btn_nxt2">Next >></button>
                     </a>
                   </div>
                   
@@ -385,7 +387,7 @@ Tick special activities that children in your school take part in:
 
 <div id="menu3" class="tab-pane fade">
   <!--this div contains the payment plan-->
-
+''
   <div class="row">
     <div class="columns">
       <ul class="price">

@@ -494,18 +494,23 @@
                     text-align: justify;
                 }
                     }
+
                     
  #lower_home {
     max-width: 960px;
     margin: 0 auto;
 }
 
+
             </style>
 
     </head>
     <body>
-        <
+
     <div id="mySidenav" class="sidenav">
+
+  
+    <div id="mySidenav" class="sidenav"  >
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="about">About</a>
@@ -603,81 +608,24 @@
             </article>
 
             
-            <article id="scroll-schools">
-            <center><span class="best-school-title" 
-                                    style="
-                                    position: absolute;
-                                    right: 0;
-                                    left: 0;
-                                    background: #fff;
-                                    font-family: sans-serif;
-                                    font-weight: bold;
-                                    font-size: 29px;">
-                                                    Featured schools
-                                                    </span></center>
-                 <?php include("schools.php"); ?>
-            </article>
+            
         </section>
                 
                    
 
-        <section>
-        <div class="container container-info">
-        <h4> Whats in it for Parents, students, and Edu stakeholders </h4>
-            <div class="first p">
-                        <img src="images/parents.jpg" width="100%">
-                        <p>
-                           <h4> Search for the right school by</h4>
-                            <ul>
-                                <li>Location</li>
-                                <li>Budget</li>
-                                <li>School type</li>
-                                <li>Boarding, Day school or both</li>
-                            </ul>
-                       </p>
-                    </div>
-
-                    <div class="second p" >
-                    <img src="images/library.jpg" width="100%">
-                    <h4>More than 20,000 tops schools are register and ranked using</h4>
-                    <p> 
-                            <ul>
-                                
-                                <li>Parent honest reviews</li>
-                                <li>Academic performance</li>
-                                <li>Location</li>
-                            </ul>
-                    </p>
-                    </div>
-
-                    <div class="third p" style="font-family: 'PT Sans', sans-serif;">
-                    <img src="images/reg.png" width="100%">
-                    <p>
-                     <h4>Search for the right school by</h4>
-                            <ul>
-                                <li>Location</li>
-                                <li>Honest reviews</li>
-                                <li>Location</li>
-                                <li>Location</li>
-                            </ul>
-                    </p>
-                    </div>
-            </div>
-           
-         <section>
-         <?php include("footer.php"); ?>
+         <?php // include("footer.php"); ?>
          </div>
 
                 
 
-<!--this is where to add a container foe whats in for student-->
+<!--this is where to add a container for whats in for student-->
 <div id="lower_home">
 
 <?php
     include("container.php");
 ?>
 
-         <section>
+         
          <?php include("footer.php"); ?>
 
          <script src="assets/js/jquery.min.js"></script>

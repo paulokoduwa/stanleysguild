@@ -257,11 +257,7 @@ include("../header.php"); ?>
                     <input type="submit" value="Submit" name="pwd_reset_btn" class="pass-reset-submit btn btn-success btn-sm" />
                 </form>
 
-                    <label>
-                        Enter the email you signed up with</label>
-                    <input type="email" placeholder="Email" />
-                    <input type="submit" value="Submit" class="pass-reset-submit btn btn-success btn-sm" />
-
+                  
                 </div>
             </div>
             <div class="wrap">
@@ -273,10 +269,7 @@ include("../header.php"); ?>
                 <input type="password" placeholder="Password" name="pwd"/>
                 <input type="submit" name="login_button" value="Sign In" class="btn btn-success btn-sm" />
 
-                <form class="login">
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
+                <
                 <div class="remember-forgot">
                     <div class="row">
                         <div class="col-md-6">
@@ -321,5 +314,7 @@ include("../header.php"); ?>
 
 
    </script>
+   
 </div>
+
 </body>
