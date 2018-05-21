@@ -17,8 +17,15 @@ include("conn.php");
         }else{
 
             if($password == $confirm_password){
+
+            //first part of registration the data is stored in user_data table 
+            $query = mysqli_query($conn,"INSERT INTO user_data SET name='$name', school='$school', password='$password', email='$email'");
+            
+            //the remaining part of the form data is stored in the school_data table
+
             
             $query = mysqli_query($conn,"INSERT INTO school_data SET name='$name', school='$school', password='$password', email='$email'");
+stanleysguild/master
             header("location:../register-school/final_registration.php");
         
         }else{

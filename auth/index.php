@@ -1,4 +1,14 @@
 
+<?php
+if(isset($_GET['success'])){
+$success = $_GET['success'];
+if($success == "true"){
+    $result = "recovery link sent to email if email was found";
+}
+}
+?>
+
+
 <html>
     <head>
     <!-- Show fav icon-->
@@ -239,15 +249,30 @@ include("../header.php"); ?>
         <div class="col-md-12">
             <div class="pr-wrap">
                 <div class="pass-reset">
+
+                <form method="post" action="reset_pwd.php">
+                    <label>
+                        Enter the email you signed up with</label>
+                    <input type="email" placeholder="Email" name="pwd_reset" />
+                    <input type="submit" value="Submit" name="pwd_reset_btn" class="pass-reset-submit btn btn-success btn-sm" />
+                </form>
+
                     <label>
                         Enter the email you signed up with</label>
                     <input type="email" placeholder="Email" />
                     <input type="submit" value="Submit" class="pass-reset-submit btn btn-success btn-sm" />
+
                 </div>
             </div>
             <div class="wrap">
                 <p class="form-title">
                     Sign In</p>
+
+                <form class="login" method="post" action="../auth/authenticate.php">
+                <input type="text" placeholder="Email" name="email" />
+                <input type="password" placeholder="Password" name="pwd"/>
+                <input type="submit" name="login_button" value="Sign In" class="btn btn-success btn-sm" />
+
                 <form class="login">
                 <input type="text" placeholder="Username" />
                 <input type="password" placeholder="Password" />

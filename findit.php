@@ -1,6 +1,9 @@
 <div class="search-form">
 
+        <form method="post" action="search.php">
+
         <form method="post" action="">
+
            
            <center> <h3>Find a School</h3></center>
             <label for="state" >State</label>
@@ -47,9 +50,15 @@
            
             <label for="school-type" >School type</label>
             <select class="text-input" name="school-type">
+
+                <option value="nursery">Nursery</option>
+                <option value="primary">Primary</option>
+                <option value="secondary">Secondary</option>
+
                 <option>Nursery</option>
                 <option>Primary</option>
                 <option>Secondary</option>
+
                 
             </select>
             <label for="city" >City</label>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 //  adds the name of the page
 $pname = "contact us";
 
@@ -223,6 +223,18 @@ $navlink["Blog"] = "../blog";
 
 $navlink["Register school"] = "../register-school";
 $navlink["Login"] = "../auth";
+
+<<<<<<< HEAD
+$footerlink1["Home"] = "../";
+$footerlink1["About"] = "../about";
+$footerlink1["Contact"] = "../contact";
+$footerlink1["Register School"] = "../register-school";
+
+$footerlink2["Blog"] = "../blog";
+$footerlink2["Review"] = "../review";
+$footerlink2["How To"] = "../about#how";
+$footerlink2["Contact us"] = "../contact";
+=======
 
 
 include("../header.php");

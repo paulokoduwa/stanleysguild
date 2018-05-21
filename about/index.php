@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 
 //this is the page name
 $pname = "About";
@@ -31,6 +31,17 @@ $navlink["Contact"] = "../contact";
 $navlink["Register School"] = "../register-school";
 $navlink["Login"] = "../auth";
 
+
+$footerlink1["Home"] = "../";
+$footerlink1["About"] = "../about";
+$footerlink1["Contact"] = "../contact";
+$footerlink1["Register School"] = "../register-school";
+
+$footerlink2["Blog"] = "../blog";
+$footerlink2["Review"] = "../review";
+$footerlink2["How To"] = "../about#how";
+$footerlink2["Contact us"] = "../contact";
+
 ?>
 
 <?php include("../header.php"); ?>
@@ -44,8 +55,12 @@ $navlink["Login"] = "../auth";
         At ProSchoolGuide, we believe that there is a unique school for that 
         precious child of yours.
          We recognize the difficulties parents go through choosing the ideal 
+
+         school for their kids when they are ripe for education, owing to the proliferation of schools everywhere. While some parents settle for schools that is visually appealing to them (without knowing in details the quality of education from such schools), others go through the stressful processes of moving from place to place in search of an ideal school for their kids.
+
          school for their kids when they are ripe for education, owing to the proliferation of schools everywhere. While some parents settle for schools that is visually appealing to them (without knowing in details the quality 
          of education from such schools), others go through the stressful processes of moving from place to place in search of an ideal school for their kids.
+
         Hence, ProSchoolGuide is set up for parents to have unbiased and
          detailed information on schools around their locations to aid them
           in making the best choice for an ideal school.
@@ -86,7 +101,6 @@ $navlink["Login"] = "../auth";
           We however leave our doors open to welcome reliable changes on
            the information provided on our site.
 
-        
 
     </div>
     <?php include("../footer.php"); ?>
@@ -101,6 +115,7 @@ $navlink["Login"] = "../auth";
                 document.getElementById("mySidenav").style.width = "0";
             }
          </script>
+
 
 
     </body>

@@ -14,7 +14,9 @@
      <!-- pull in google font -->
     <link href="https://fonts.googleapis.com/css?family=Forum|Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
     <link type="text/css" rel="stylesheet" href="container.css">
+ 
         <title>Schools Guide | Home Page </title>
           <style>
 
@@ -139,7 +141,12 @@
                 
             }
             .search-form{
-               
+
+                background-color: #00000047;
+                padding: 20px;
+                position: relative;
+                top:0;
+                bottom: 0;
             }
             .search-form h3{
             color: #fff;
@@ -168,7 +175,6 @@
                 margin: auto;              
             }
            
-
             .search-form label{
                 color: #ffffff;
                 font-family: 'Ubuntu', sans-serif;
@@ -206,6 +212,63 @@
                 white-space: nowrap;
                 padding: 20px 0;
             }
+
+            .item {
+                margin: 10px;
+                margin-top: 50px;
+                display: inline-block;
+                width: 200px;
+                box-shadow: -1px 1px 9px 0px black;
+              
+            }
+            .item .card--big{
+                background-color: #fff;
+                
+                text-wrap: wrap;
+            
+
+            }
+            .item .card--big .card__image{
+                position: relative;
+                
+                height: 150px;
+              
+            }
+            .item .card--big .card__title{
+                margin: 0;
+                text-shadow: 0px 0px 3px black;
+                top: -11px;
+                white-space: pre-wrap;
+                position: relative;
+                background: #0000001c;
+                color: white;
+                padding: 0 5px;
+                box-shadow: 0 0 60px -4px black;
+             }
+            .item .card--big .card__image img{
+           
+                width: 100%;
+               
+                }
+            .item .card--big {
+            }
+            .card__button {
+                outline: none;
+                position: relative;
+                display: inline-block;
+                border: none;
+                line-height: 33px;
+                background-color: transparent;
+                padding: 0 16px;
+                color: #FF1744;
+            }
+            .card__button:hover {
+                box-shadow: 0 0 20px 1px black;
+                font font-family: sans-serif;
+                background-color: #999999;
+                color: #fff;
+            }
+
             
                
                 
@@ -216,6 +279,7 @@
                     margin-bottom:5px  
                 }
                 */
+
             section .first, .second, .third{
             padding: 0px 20px;
 
@@ -431,6 +495,13 @@
                 }
                     }
 
+            </style>
+
+    </head>
+    <body>
+    <div id="mySidenav" class="sidenav">
+
+
  #lower_home {
     max-width: 960px;
     margin: 0 auto;
@@ -442,6 +513,7 @@
 
 
     <div id="mySidenav" class="sidenav"  >
+
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="about">About</a>
             <a href="blog">Blog</a>
@@ -486,11 +558,19 @@
         </header>
       
        
+
+    <section>
+            <article>
+                <div class="first-section">
+
+            <div class="background-image">
+
     <section >
             <article>
                 <div  class="first-section">
 
             <div   class="background-image">
+
 
 
                 <div class="carousel slide" data-ride="carousel" id="carousel-1">
@@ -528,6 +608,73 @@
                    
                 </div> 
             </article>
+
+            
+            <article id="scroll-schools">
+            <center><span class="best-school-title" 
+                                    style="
+                                    position: absolute;
+                                    right: 0;
+                                    left: 0;
+                                    background: #fff;
+                                    font-family: sans-serif;
+                                    font-weight: bold;
+                                    font-size: 29px;">
+                                                    Featured schools
+                                                    </span></center>
+                 <?php include("schools.php"); ?>
+            </article>
+        </section>
+                
+                   
+
+        <section>
+        <div class="container container-info">
+        <h4> Whats in it for Parents, students, and Edu stakeholders </h4>
+            <div class="first p">
+                        <img src="images/parents.jpg" width="100%">
+                        <p>
+                           <h4> Search for the right school by</h4>
+                            <ul>
+                                <li>Location</li>
+                                <li>Budget</li>
+                                <li>School type</li>
+                                <li>Boarding, Day school or both</li>
+                            </ul>
+                       </p>
+                    </div>
+
+                    <div class="second p" >
+                    <img src="images/library.jpg" width="100%">
+                    <h4>More than 20,000 tops schools are register and ranked using</h4>
+                    <p> 
+                            <ul>
+                                
+                                <li>Parent honest reviews</li>
+                                <li>Academic performance</li>
+                                <li>Location</li>
+                            </ul>
+                    </p>
+                    </div>
+
+                    <div class="third p" style="font-family: 'PT Sans', sans-serif;">
+                    <img src="images/reg.png" width="100%">
+                    <p>
+                     <h4>Search for the right school by</h4>
+                            <ul>
+                                <li>Location</li>
+                                <li>Honest reviews</li>
+                                <li>Location</li>
+                                <li>Location</li>
+                            </ul>
+                    </p>
+                    </div>
+            </div>
+           
+         <section>
+         <?php include("footer.php"); ?>
+         </div>
+
                 
 
 <!--this is where to add a container foe whats in for student-->
@@ -539,7 +686,7 @@
 
          <section>
          <?php include("footer.php"); ?>
-      
+
          <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
          <script>
@@ -553,8 +700,10 @@
                 document.getElementById("mySidenav").style.width = "0";
             }
          </script>
+
             </div>
     </div>
+
     </body>
 
     
