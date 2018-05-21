@@ -494,25 +494,18 @@
                     text-align: justify;
                 }
                     }
+                    
+ #lower_home {
+    max-width: 960px;
+    margin: 0 auto;
+}
 
             </style>
 
     </head>
     <body>
+        <
     <div id="mySidenav" class="sidenav">
-
-
- #lower_home {
-    max-width: 960px;
-    margin: 0 auto;
-}
-            </style>
-
-    </head>
-    <body >
-
-
-    <div id="mySidenav" class="sidenav"  >
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="about">About</a>
@@ -557,7 +550,7 @@
             </div>
         </header>
       
-       
+    
 
     <section>
             <article>
