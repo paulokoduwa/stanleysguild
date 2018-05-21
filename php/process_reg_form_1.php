@@ -25,7 +25,7 @@ include("conn.php");
 
             
             $query = mysqli_query($conn,"INSERT INTO school_data SET name='$name', school='$school', password='$password', email='$email'");
-stanleysguild/master
+
             header("location:../register-school/final_registration.php");
         
         }else{

@@ -126,7 +126,7 @@ hr{
 	color: #fff;
 }
 
-.form-group{
+.form-group1s{
 	margin-bottom: 15px;
 }
 
@@ -231,9 +231,9 @@ $navlink["Login"] = "../auth";
 			<div class="row main">
 				<div class="main-login main-center">
 				<h5>Register your school in simple steps</h5>
-					<form class="" method="post" action="php/process_reg_form_1.php">
+					<form class="" method="post" action="../php/process_reg_form_1.php">
 						
-						<div class="form-group">
+						<div class="form-group1">
 							<label for="name" class="cols-sm-2 control-label">Your Name</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
@@ -243,7 +243,7 @@ $navlink["Login"] = "../auth";
 							</div>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group1">
 							<label for="email" class="cols-sm-2 control-label">Your Email</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
@@ -253,7 +253,7 @@ $navlink["Login"] = "../auth";
 							</div>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group1">
 							<label for="schoolname" class="cols-sm-2 control-label">School name</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
@@ -263,7 +263,7 @@ $navlink["Login"] = "../auth";
 							</div>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group1">
 							<label for="password" class="cols-sm-2 control-label">Password</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
@@ -273,7 +273,7 @@ $navlink["Login"] = "../auth";
 							</div>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group1">
 							<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
@@ -284,7 +284,7 @@ $navlink["Login"] = "../auth";
 						</div>
 						
 						
-						<div class="form-group ">
+						<div class="form-group1 ">
 							<button type="submit" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
 						</div>
 
