@@ -212,66 +212,6 @@
                 white-space: nowrap;
                 padding: 20px 0;
             }
-
-            .item {
-                margin: 10px;
-                margin-top: 50px;
-                display: inline-block;
-                width: 200px;
-                box-shadow: -1px 1px 9px 0px black;
-              
-            }
-            .item .card--big{
-                background-color: #fff;
-                
-                text-wrap: wrap;
-            
-
-            }
-            .item .card--big .card__image{
-                position: relative;
-                
-                height: 150px;
-              
-            }
-            .item .card--big .card__title{
-                margin: 0;
-                text-shadow: 0px 0px 3px black;
-                top: -11px;
-                white-space: pre-wrap;
-                position: relative;
-                background: #0000001c;
-                color: white;
-                padding: 0 5px;
-                box-shadow: 0 0 60px -4px black;
-             }
-            .item .card--big .card__image img{
-           
-                width: 100%;
-               
-                }
-            .item .card--big {
-            }
-            .card__button {
-                outline: none;
-                position: relative;
-                display: inline-block;
-                border: none;
-                line-height: 33px;
-                background-color: transparent;
-                padding: 0 16px;
-                color: #FF1744;
-            }
-            .card__button:hover {
-                box-shadow: 0 0 20px 1px black;
-                font font-family: sans-serif;
-                background-color: #999999;
-                color: #fff;
-            }
-
-            
-               
-                
             
                 .h1, h2 {
                     font-size:20px;
@@ -508,9 +448,6 @@
     <body>
 
     <div id="mySidenav" class="sidenav">
-
-  
-    <div id="mySidenav" class="sidenav"  >
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="about">About</a>
