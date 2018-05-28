@@ -1,24 +1,9 @@
 
-
-
-<footer>
-
+<div class="clearfloat"></div>
+<section>
+<footer> 
 <div class="row" style="background-color:#90b644; ">
-    <div class="col-sm-4">
-            <ul>
-
-                    <li><a href="#" class="anchor">Home</a></li>
-            
-            <?php
-            //this loops the new nav links for the page
-            if(@$footerlink1 !=""){
-            foreach($footerlink1 as $x => $x_value) {
-               
-                echo "<li><a href=". $x_value .">". $x ."</a></li>";
-                
-            }
-            }else{
-                ?>
+    <div class="col-sm-4 col-xs-12">
                 
 
                <li><a href="#" class="anchor">Home</a></li>
@@ -30,20 +15,8 @@
 
                    <!-- <li><img src="images/Schoolsguidelogo.png"></li> -->
                    
-            </ul>
     </div>
-    <div class="col-sm-4">
-            <ul>                          
-                    <li><a href="blog" class="anchor">Blog</a></li>
-
-               <!-- <li><img src="images/Schoolsguidelogo.png"></li>
-               --> 
-            <?php }?>
-            </ul>
-                    
-                 
-    </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-xs-12">
             <ul>                   
             <?php
             //this loops the new nav links for the page
@@ -56,10 +29,9 @@
             }else{
                 ?>                    
 
-               <!-- <li><img src="images/Schoolsguidelogo.png"></li> 
+             <!--  <li><img src="images/Schoolsguidelogo.png"></li> -->
                
             </ul>
-</div>-->
             <li><a href="blog" class="anchor">Blog</a></li>
 
                     <li><a href="review" class="anchor">Review</a></li>
@@ -68,15 +40,10 @@
             <?php } ?>       
                     
                 </ul>
-    
-    
-    
-        </div>
-        <div class="col-sm-4">
+            </div>
+        <div class="col-sm-4 col-xs-12">
                 <ul >
-                        <li style="color: white !important;"> <h4>Contact Info</h4></li> 
-                    
-                       <li style="color: white !important;"> 34, Newton street, Benin city</li>
+                        <li style="color: white !important;"> <h4>Contact Info</h4></li>
                        <li style="color: white !important;"> info@proschoolguide.com</li>
                        <li style="color: white !important;">08036376025, 07057911177</li>
                    </ul>
@@ -98,10 +65,5 @@
     </div>
 </div>
 </div>
-
-    
-
-
-    
-
 </footer>
+            </section>

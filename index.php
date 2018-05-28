@@ -14,7 +14,7 @@
      <!-- pull in google font -->
     <link href="https://fonts.googleapis.com/css?family=Forum|Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-
+   
     <link type="text/css" rel="stylesheet" href="container.css">
  
         <title>Schools Guide | Home Page </title>
@@ -465,7 +465,7 @@
                 </a>
                 <div class="h-brand">
                    <span class="brand"> Schools Guide</span>
-                    <img src="images/Schoolsguidelogo.png">
+                 <!--   <img src="images/Schoolsguidelogo.png"> -->
                 </div>
                 <div class="h-links">
                     <ul>
@@ -532,31 +532,18 @@
                     <li data-target="#carousel-1" data-slide-to="2"></li>
                 </ol>
               </div>
-
-
-                    
                     <?php include("findit.php"); ?>
-
-
 
                     </div>
                    
                 </div> 
-            </article>
-
-            
-            
+            </article>   
         </section>
-                
-                   
-
-         <?php // include("footer.php"); ?>
-         </div>
 
                 
 
 <!--this is where to add a container for whats in for student-->
-<div id="lower_home">
+<div >
 
 <?php
     include("container.php");
@@ -565,8 +552,7 @@
          
          <?php include("footer.php"); ?>
 
-         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
          <script>
             /* Set the width of the side navigation to 250px */
             function openNav() {
@@ -581,7 +567,7 @@
 
             </div>
     </div>
-
+        
     </body>
 
     
